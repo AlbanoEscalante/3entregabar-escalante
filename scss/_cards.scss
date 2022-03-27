@@ -1,8 +1,23 @@
 .cards{
-    color: grey;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    color:black;
     margin-top: 10px;
     padding-top: 10px;
-    margin-left: 15px;
-    height: 40px;
-    background-image: linear-gradient(to right, beige, white); 
+    padding-bottom: 10px;
+    width: auto;
+    background-image: linear-gradient(to right, rgb(63, 63, 63), white); 
+}
+
+.cards img{
+    padding-left: 2rem;
+}
+.cards p{
+    padding-left: 2rem;
+    ;
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
 }

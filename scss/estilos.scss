@@ -18,15 +18,20 @@ h1{
     color: grey; 
 }
 
+.spacenav{
+    padding-left: 15rem;
+}
 .colornav a{
     color: black;
+
 }
 
 .banner{
     display: flex;
+    justify-content: center;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(4,auto);
-
+    
 }
 .imgbanner{
     grid-row: 1/5;
@@ -89,6 +94,16 @@ h1{
     height: 3rem;
     background-color: bisque;
 }
+ h3{
+     text-align: center;
+ }
+.infoparrafo{
+    display: flex;
+    width: 100%;
+    padding-left: 18rem;
+    padding-right: 18rem;
+}
+
 
 footer{ @extend .cards;
 }
@@ -107,7 +122,8 @@ footer{ @extend .cards;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
-    color: grey;
+    margin: 15px;
+    color: black;
     background-image: $fondo3;
     grid-area: $area;
     
@@ -145,12 +161,16 @@ footer{ @extend .cards;
 
 /**************carta de vinos*******////@at-root
 
-.listabanner2 ul{
-    color: rgb(46, 40, 40);
-    list-style-type: "-";
-    padding-left: 3rem;
+.infovinos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: auto;
+    padding-left: 8rem;
 }
 
+.infovinos div{
+    margin: 10px;
+}
 /**************resrevas***********/
 
 .tarjeta_titulo{
@@ -164,7 +184,7 @@ footer{ @extend .cards;
 
 .tarjeta__reserva{
     display:grid;
-    color: white;
+    color: grey;
     width: 60%;
     height: 60%;
     margin: auto;

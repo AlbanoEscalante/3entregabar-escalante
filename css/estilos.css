@@ -2,12 +2,24 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
 .cards, footer {
-  color: grey;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  color: black;
   margin-top: 10px;
   padding-top: 10px;
-  margin-left: 15px;
-  height: 40px;
-  background-image: linear-gradient(to right, beige, white); }
+  padding-bottom: 10px;
+  width: auto;
+  background-image: linear-gradient(to right, #3f3f3f, white); }
+
+.cards img, footer img {
+  padding-left: 2rem; }
+
+.cards p, footer p {
+  padding-left: 2rem; }
+
+.cards a, footer a {
+  text-decoration: none;
+  color: black; }
 
 h1 {
   padding-top: 2rem;
@@ -22,11 +34,15 @@ h1 {
 .titulo span {
   color: grey; }
 
+.spacenav {
+  padding-left: 15rem; }
+
 .colornav a {
   color: black; }
 
 .banner {
   display: flex;
+  justify-content: center;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, auto); }
 
@@ -83,6 +99,15 @@ h1 {
   height: 3rem;
   background-color: bisque; }
 
+h3 {
+  text-align: center; }
+
+.infoparrafo {
+  display: flex;
+  width: 100%;
+  padding-left: 18rem;
+  padding-right: 18rem; }
+
 /*******************menu***************/
 .menus {
   padding-top: 3rem 0;
@@ -95,8 +120,9 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  color: grey;
-  background-image: linear-gradient(to bottom, #e0e0b8, white);
+  margin: 15px;
+  color: black;
+  background-image: linear-gradient(to bottom, #767985, white);
   grid-area: m1; }
 
 .infoplatosm2 {
@@ -106,8 +132,9 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  color: grey;
-  background-image: linear-gradient(to bottom, #e0e0b8, white);
+  margin: 15px;
+  color: black;
+  background-image: linear-gradient(to bottom, #767985, white);
   grid-area: m2; }
 
 .infoplatosm3 {
@@ -117,8 +144,9 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
-  color: grey;
-  background-image: linear-gradient(to bottom, #e0e0b8, white);
+  margin: 15px;
+  color: black;
+  background-image: linear-gradient(to bottom, #767985, white);
   grid-area: m3; }
 
 .infoplatos h2 {
@@ -139,10 +167,14 @@ h1 {
   font-family: sans-serif; }
 
 /**************carta de vinos*******/
-.listabanner2 ul {
-  color: #2e2828;
-  list-style-type: "-";
-  padding-left: 3rem; }
+.infovinos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row: auto;
+  padding-left: 8rem; }
+
+.infovinos div {
+  margin: 10px; }
 
 /**************resrevas***********/
 .tarjeta_titulo {
@@ -155,7 +187,7 @@ h1 {
 
 .tarjeta__reserva {
   display: grid;
-  color: white;
+  color: grey;
   width: 60%;
   height: 60%;
   margin: auto;
